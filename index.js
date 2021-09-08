@@ -1,36 +1,33 @@
-/* ICONS HOVER FUNCTION */
+/* NavBar Function */
+
+/* IMAGES HOVER FUNCTION */
 
 $(document).ready(function() {
-    $('.facebook').hover(function() {
-        $(this).css({height:"70px", width: "70px"})
+    $('#ezpresso').hover(function() {
+        $(this).css({opacity: ".09", transitionDuration: "0.5s"})
     }, function () {
-        $(this).css({height:"50px", width:"50px"});
+        $(this).css({opacity: "1" , transitionDuration: "0.5s"});
     });
 })
 
 $(document).ready(function() {
-    $('.instagram').hover(function() {
-        $(this).css({height:"70px", width: "70px"})
+    $('#emmanuel').hover(function() {
+        $(this).css({opacity: ".09", transitionDuration: "0.5s"})
     }, function () {
-        $(this).css({height:"50px", width:"50px"});
+        $(this).css({opacity: "1" , transitionDuration: "0.5s"});
     });
 })
 
 $(document).ready(function() {
-    $('.github').hover(function() {
-        $(this).css({height:"70px", width: "70px"})
+    $('#CovidCoop').hover(function() {
+        $(this).css({opacity: ".09", transitionDuration: "0.5s"})
     }, function () {
-        $(this).css({height:"40px", width:"40px"});
+        $(this).css({opacity: "1", transitionDuration: "0.5s"});
     });
 })
 
-$(document).ready(function() {
-    $('.linkedin').hover(function() {
-        $(this).css({height:"70px", width: "70px"})
-    }, function () {
-        $(this).css({height:"50px", width:"50px"});
-    });
-})
+
+
 
 /* AJAX */
 
