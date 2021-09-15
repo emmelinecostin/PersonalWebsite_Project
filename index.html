@@ -29,21 +29,36 @@
             crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="./Icons/2.png">
         <title>Emmeline's Portfolio</title>
     </head>
 
     <body>
-        <!-- Header  -->
-        <div class="navBar">
-            <h1>Emmeline Costin</h1>
-            <a class="" href="mailto:emmecostin@gmail.com">
-                
-            </a>
-            
-        </div>
+        <nav class="navContainer">
+            <img src="Icons/logo.png" id="logo" class="logo">
+
+            <ul>
+              <li> 
+                <!-- link one -->
+                <a id="sec-1" href="#one"> Skills </a>
+              </li>
+              <li>
+                <!-- link two -->
+                 <a id="sec-2" href="#two"> About Me </a>
+              </li>
+              <li>
+                <!-- link three -->
+                <a id="sec-3" href="#three"> Projects </a>
+              </li>
+              <li>
+                <!-- link four -->
+                <a id="sec-4" href="#four"> Contact Information </a>
+              </li>
+            </ul>
+          </nav>
 
         <!-- Images  -->
-        <div class="introContainer">
+        <div id="zero" class="introContainer">
             <div class="underIntro">
                 <div class="introImg">
                     <img src="images/IMG_7977.JPG" >
@@ -57,7 +72,7 @@
         </div> 
 
         <!-- List of my skills -->
-        <div class="skillsContainer">
+        <div id="one" class="skillsContainer anchor">
             <div class="techSkills">
                 <h1>Tech Related Skills</h1>
                     <div class="skills-1">
@@ -82,7 +97,7 @@
         </div> 
 
         <!-- About  -->
-        <div class="aboutContainer"> 
+        <div id='two' class="aboutContainer anchor2 "> 
             <h1>About</h1>
             <div class="aboutItems">
                 <h3>Mission-driven full stack web developer with a passion for simple user-friendly design,
@@ -93,7 +108,7 @@
             </div>
         </div>
         <!-- Projects -->
-        <div class="projectsContainer">
+        <div id="three" class="projectsContainer anchor3">
             <div class="allProjects">
                 <div class="projectImgs">
                     <div class="img-1">
@@ -120,10 +135,8 @@
             <h1>Projects</h1>
         </div>
 
-
-
         <!--Footer -->
-        <div class="footerContainer">
+        <div id="four" class="footerContainer">
             <h5>Contact Information</h5>
             <div class="containerIcons">
                 <div class="footerIcons">

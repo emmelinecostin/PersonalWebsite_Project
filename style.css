@@ -4,13 +4,73 @@ body {
   color: #08090a;
 }
 /* NavBar  */
-.navBar {
-  padding: 50px;
+#logo {
+  margin-top: -30px; 
+  width: 17rem; 
+  height: 13rem; 
 }
-.navBar h1 {
+nav {
+    top: 0%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    background-color: #e1e4e3;
+    z-index: 10;
+}
+.container {
+    padding: 22px;
+    margin: 0 auto;
+    text-align: center;
+}
+nav h1 {
   font-weight: 200;
   border-radius: 1px solid black;
 }
+.navContainer ul li {
+    list-style: none;
+    margin: 0 10px;
+    display: inline-block;
+  }
+  .navContainer ul li a:hover {
+    padding: 12px;
+    color: #08090A;
+    border-bottom: 1px solid black;
+  }
+  .navContainer ul li a {
+    margin: 8px;
+    padding: 10px;
+    color: #3D4141;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+  }
+  a.active-link{
+    border-bottom: 2px solid #08090A;
+  }
+  .navContainer p{
+  margin-bottom: 16px;
+  color: #08090A;
+  font-weight: 700;
+  font-size: 20px;
+  }
+ 
+  #zero{
+    padding-top: 150px;
+
+  }
+  .anchor {
+    padding-top: 200px;
+}
+  .anchor2 {
+      padding-top: 200px;
+  }
+  #three{
+    padding-top: 240px;
+  }
 
 /* Intro Container */
 .introContainer {
@@ -20,10 +80,11 @@ body {
   margin-top: 0;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 150px;
+  margin-bottom: 75px;
   padding: 2rem;
   width: 100%;
   max-width: 100%;
+  height: 100vh; 
   line-height: 1px;
   background-color: #222823;
   opacity: 1;
@@ -56,8 +117,9 @@ body {
 /* SKILLS */
 
 .skillsContainer {
-  margin-top: 100px;
-  margin-bottom: 150px;
+  margin-top: 75px;
+  margin-bottom: 200px;
+
 }
 .techSkills {
   display: flex;
@@ -114,7 +176,7 @@ body {
 .aboutContainer {
   max-width: 100%;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   margin-bottom: 100px;
   margin-right: auto;
   margin-left: auto;
@@ -129,7 +191,7 @@ body {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding: 60px;
+  padding: 20px;
   letter-spacing: 4px;
   font-weight: 300;
   border-bottom: white solid 1px;
@@ -158,6 +220,7 @@ body {
 .projectsContainer {
   max-width: 90%;
   width: 100%;
+  height: 100%; 
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -359,12 +422,98 @@ body {
     width: 10rem;
     height: 10rem;
   }
+
+  /* FOOTER */
+
+  .footerContainer h5 {
+    font-size: large;
+  }
+  .footerIcons {
+    max-width: 50%;
+  }
+  
+  .icon {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+ /* NavBar  */
+#logo {
+  margin-top: -120px; 
+  margin-left: -20px;
+  margin-bottom: -50px;
+  width: 15rem; 
+  height: 12rem; 
+}
+nav {
+    top: 0%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    background-color: #e1e4e3;
+    z-index: 10;
+}
+.container {
+    padding: 22px;
+    margin: 0 auto;
+    text-align: center;
+}
+nav h1 {
+  font-weight: 200;
+  border-radius: 1px solid black;
+}
+.navContainer ul li {
+    list-style: none;
+    margin: 0 10px;
+    display: inline-block;
+  }
+  .navContainer ul li a:hover {
+    padding: 12px;
+    color: #08090A;
+    border-bottom: 1px solid black;
+  }
+  .navContainer ul li a {
+    margin: 8px;
+    padding: 10px;
+    color: #3D4141;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+  }
+  a.active-link{
+    border-bottom: 2px solid #08090A;
+  }
+  .navContainer p{
+  margin-bottom: 16px;
+  color: #08090A;
+  font-weight: 700;
+  font-size: 20px;
+  }
+ 
+  #zero{
+    padding-top: 150px;
+
+  }
+  .anchor {
+    padding-top: 200px;
+}
+  .anchor2 {
+      padding-top: 200px;
+  }
+  #three{
+    padding-top: 240px;
+  }
+
+  
   /* Intro Container */
 
   .introContainer {
@@ -477,12 +626,30 @@ body {
     width: 14rem;
     height: 14rem;
   }
+
+  /* FOOTER */
+
+  .footerContainer h5 {
+    font-size: large;
+  }
+  .footerIcons {
+    max-width: 50%;
+  }
+  
+  .icon {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
 }
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  nav {
+   
+}
+  
   /* Intro Container */
   .introContainer {
     margin-bottom: 100px;
@@ -594,6 +761,20 @@ body {
   .projectImg {
     width: 14rem;
     height: 14rem;
+  }
+
+  /* FOOTER */
+
+  .footerContainer h5 {
+    font-size: large;
+  }
+  .footerIcons {
+    max-width: 50%;
+  }
+  
+  .icon {
+    width: 1.7rem;
+    height: 1.7rem;
   }
 }
 
@@ -713,6 +894,20 @@ body {
     width: 14rem;
     height: 14rem;
   }
+
+  /* FOOTER */
+
+  .footerContainer h5 {
+    font-size: large;
+  }
+  .footerIcons {
+    max-width: 50%;
+  }
+  
+  .icon {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
 }
 
 /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
@@ -751,7 +946,7 @@ body {
     flex-direction: row;
     justify-content: center;
     max-width: 80%;
-    padding: 20px;
+    padding: 10px;
   }
   .techSkills h1 {
     letter-spacing: 1px;
@@ -761,7 +956,7 @@ body {
     flex-direction: row;
     justify-content: center;
     max-width: 80%;
-    padding: 30px;
+    padding: 10px 20px 10px 10px ;
   }
   .familiarSkills h1 {
     letter-spacing: 1px;
@@ -777,7 +972,7 @@ body {
   }
   .skills-1 h3 {
     font-size: large;
-    padding: 20px;
+    padding: 10px;
   }
 
   /* About */
@@ -947,5 +1142,18 @@ body {
   .projectImg {
     width: 14rem;
     height: 14rem;
+  }
+
+  /* FOOTER */
+
+  .footerContainer h5 {
+    font-size: large;
+  }
+  .footerIcons {
+    max-width: 50%;
+  }
+  .icon {
+    width: 1.7rem;
+    height: 1.7rem;
   }
 }
