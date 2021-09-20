@@ -29,6 +29,8 @@ $("#sec-4").click(function() {
     }, 1000);
  return false;
 });
+
+
 /* IMAGES HOVER FUNCTION */
 
 $(document).ready(function() {
@@ -55,8 +57,16 @@ $(document).ready(function() {
     });
 })
 
+// Moble Navbar Function 
 
-
+function navDropDown() {
+    var navDrop = document.getElementById("myLinks");
+    if (navDrop.style.display === "block") {
+      navDrop.style.display = "none";
+    } else {
+      navDrop.style.display = "block";
+    }
+  }
 
 /* AJAX */
 
