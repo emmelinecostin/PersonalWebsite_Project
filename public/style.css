@@ -1,9 +1,13 @@
-/* ENTIRE SITE */
+/* entire site*/
 body {
   background-color: #e1e4e3;
   color: #08090a;
+  margin: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-/* NavBar  */
+/* navbar  */
 #logo {
   margin-top: -30px;
   width: 17rem;
@@ -72,7 +76,7 @@ a.active-link {
   padding-top: 240px;
 }
 
-/* Intro Container */
+/* intro container */
 .introContainer {
   display: flex;
   flex-direction: row;
@@ -82,7 +86,7 @@ a.active-link {
   margin-left: auto;
   margin-bottom: 75px;
   padding: 2rem;
-  width: 100%;
+  width: 90%;
   max-width: 100%;
   height: 100vh;
   line-height: 1px;
@@ -97,24 +101,34 @@ a.active-link {
   align-items: center;
 }
 .introContainer img {
-  width: 35rem;
-  height: 35rem;
+  height: 40rem;
+  width: 40rem;
   margin: 2rem;
   box-shadow: 1px 1px 5px #a7a2a9;
+  border-radius: 0px 50% 50% 0px;
 }
 .intro {
   display: flex;
   flex-direction: column;
-  line-height: 2.5;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  width: 70%;
+  height: 40rem;
+  /* background-color: #a6a9aa;
+  box-shadow: 1px 1px 5px #a6a9aa; */
+  opacity: 0.7;
 }
 .intro h2 {
-  font-weight: 200;
+  font-size: xx-large;
+  font-weight: 100;
   line-height: 1.8;
   letter-spacing: 1px;
   margin-bottom: 2rem;
+  color: #e1e4e3;
 }
 
-/* SKILLS */
+/* skills section  */
 
 .skillsContainer {
   margin-top: 75px;
@@ -167,11 +181,12 @@ a.active-link {
   padding: 3rem;
 }
 .skills-1 h3 {
+  font-size: x-large;
   font-weight: 200;
   padding: 10px;
 }
 
-/* About */
+/* about section  */
 .aboutContainer {
   max-width: 100%;
   width: 100%;
@@ -198,7 +213,7 @@ a.active-link {
   color: white;
 }
 .aboutItems {
-  padding: 60px;
+  padding: 20px 60px 60px 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,15 +222,19 @@ a.active-link {
   padding: 20px;
   border-left: 5px solid white;
   line-height: 1.9;
+  font-size: x-large;
+  font-weight: 500;
   color: white;
 }
 .aboutItems h5 {
   padding: 30px;
   line-height: 1.7;
+  font-size: x-large;
+  font-weight: 200;
   color: white;
 }
 
-/* Project Images */
+/* projects section */
 .projectsContainer {
   max-width: 90%;
   width: 100%;
@@ -267,11 +286,11 @@ a.active-link {
   box-shadow: 1px 1px 35px #222823;
 }
 
-/* FOOTER */
+/* footer section  */
 .footerContainer {
   margin: 0 auto;
   width: 100%;
-  max-width: 100%;
+  /* max-width: 100%; */
   padding: 50px;
   margin-top: 50px;
   text-align: center;
@@ -305,632 +324,36 @@ a.active-link {
   height: 2rem;
 }
 
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* MEDIA QUERIES  */
 
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* NavBar */
-  .logo {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .nav-links {
-    display: none;
-  }
-  .navContainer ul li {
-    display: none;
-  }
-  nav {
-    position: relative;
-  }
-  .anchor {
-    padding-top: 50px;
-  }
-  #three {
-    padding-top: 50px;
-  }
-  /* Intro Container */
-  .introContainer {
-    padding: 1rem;
-    padding-bottom: 150px;
-    height: 100vh;
-  }
-  .underIntro {
-    flex-direction: column;
-    justify-content: center;
-  }
+@media screen and (max-width: 1200px) {
+  /* introduction section */
   .introContainer img {
-    width: 15rem;
-    height: 15rem;
+    height: 32rem;
+    width: 32rem;
   }
   .intro {
-    display: flex;
-    flex-direction: column;
-    line-height: 2.5;
+    height: 28rem;
   }
   .intro h2 {
-    font-size: medium;
-  }
-
-  /* SKILLS */
-
-  .skillsContainer {
-    margin-top: 50px;
-    margin-bottom: 100px;
-  }
-  .techSkills {
-    flex-direction: column;
-    justify-content: center;
-    max-width: 100%;
-    padding: 20px;
-  }
-  .techSkills h1 {
-    letter-spacing: 1px;
     font-size: x-large;
   }
-  .familiarSkills {
-    flex-direction: column-reverse;
-    justify-content: center;
-    max-width: 100%;
-    padding: 30px;
+
+  /* skills section */
+
+  .techSkills h1 {
+    font-size: xx-large;
   }
   .familiarSkills h1 {
-    letter-spacing: 1px;
-    font-size: x-large;
-    padding: 30px 10px 30px 50px;
-  }
-  .skills-1 {
-    flex-direction: row;
-    padding: 20px;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .skills-1 h3 {
-    font-size: large;
-    padding: 20px;
-  }
-
-  /* About */
-  .aboutContainer {
-    height: 100%;
-    padding-top: 30px;
-    margin-bottom: 50px;
-  }
-  .aboutContainer h1 {
-    font-size: x-large;
-    padding: 20px;
-    max-width: 80%;
-  }
-  .aboutItems {
-    flex-direction: column;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 20px;
-    max-width: 90%;
-  }
-  .aboutItems h3 {
-    padding: 10px;
-    font-size: medium;
-    margin-bottom: 15px;
-  }
-  .aboutItems h5 {
-    font-size: small;
-    padding: 10px;
-  }
-
-  /* Project Images */
-  .projectsContainer {
-    max-width: 90%;
-    flex-direction: row;
-    padding: 10px;
-    margin: 50px 10px;
-  }
-  .projectsContainer h1 {
-    font-size: 2rem;
-    padding: 17px;
-    font-weight: 400;
-    max-width: 5%;
-  }
-  .allProjects {
-    padding: 30px 30px 30px 10px;
-    max-width: 95%;
-  }
-  .projectImgs {
-    padding: 15px;
-  }
-  .projectImg {
-    width: 10rem;
-    height: 10rem;
-  }
-
-  /* FOOTER */
-
-  .footerContainer h5 {
-    font-size: large;
-  }
-  .footerIcons {
-    max-width: 50%;
-  }
-
-  .icon {
-    width: 1.7rem;
-    height: 1.7rem;
+    font-size: xx-large;
   }
 }
 
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* NavBar  */
-  .logo {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px;
-  }
-  .nav-links {
-    display: none;
-  }
-  .navContainer ul li {
-    display: none;
-  }
-  nav {
-    position: relative;
-    justify-content: center;
-  }
-  .anchor {
-    padding-top: 20px;
-  }
-  #three {
-    padding-top: 20px;
-  }
-  /* Intro Container */
-
-  .introContainer {
-
-    padding-bottom: 150px;
-  }
-  .underIntro {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .introContainer img {
-    width: 15rem;
-    height: 15rem;
-  }
-  .intro {
+@media screen and (max-width: 960px) {
+  /* navbar secton */
+  #logo {
     display: flex;
-    flex-direction: column;
-    line-height: 2.5;
-  }
-  .intro h2 {
-    font-size: medium;
-  }
-
-  /* SKILLS */
-
-  .skillsContainer {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  .techSkills {
-    flex-direction: column;
     justify-content: center;
-    max-width: 100%;
-    padding: 20px;
-  }
-  .techSkills h1 {
-    letter-spacing: 1px;
-    font-size: x-large;
-  }
-  .familiarSkills {
-    flex-direction: column-reverse;
-    justify-content: center;
-    max-width: 100%;
-    padding: 30px;
-  }
-  .familiarSkills h1 {
-    letter-spacing: 1px;
-    font-size: x-large;
-    padding: 30px 10px 30px 50px;
-  }
-  .skills-1 {
-    flex-direction: row;
-    padding: 0px;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .skills-1 h3 {
-    font-size: large;
-    padding: 20px;
-  }
-
-  /* About */
-  .aboutContainer {
-    height: 100%;
-    margin-top: 0px;
-    margin-bottom: 100px;
-    margin-top: 100px; 
-  }
-  .aboutContainer h1 {
-    font-size: x-large;
-    padding: 20px;
-    max-width: 80%;
-  }
-  .aboutItems {
-    flex-direction: column;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 20px;
-    max-width: 90%;
-  }
-  .aboutItems h3 {
-    padding: 10px;
-    font-size: medium;
-    margin-bottom: 15px;
-  }
-  .aboutItems h5 {
-    font-size: small;
-    padding: 10px;
-  }
-
-  /* Project Images */
-  .projectsContainer {
-    max-width: 90%;
-    flex-direction: row;
-    padding: 10px;
-    margin: 0px 10px;
-  }
-  .projectsContainer h1 {
-    font-size: 2rem;
-    padding: 10px;
-    font-weight: 400;
-    max-width: 10%;
-  }
-  .allProjects {
-    padding: 30px 30px 30px 10px;
-    max-width: 95%;
-  }
-  .projectImgs {
-    padding: 15px;
-  }
-  .projectImg {
-    width: 14rem;
-    height: 14rem;
-  }
-
-  /* FOOTER */
-
-  .footerContainer h5 {
-    font-size: large;
-  }
-  .footerIcons {
-    max-width: 50%;
-  }
-
-  .icon {
-    width: 1.7rem;
-    height: 1.7rem;
-  }
-}
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-  /* Nav */
-  .logo {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px;
-  }
-  .nav-links {
-    display: none;
-  }
-  .navContainer ul li {
-    display: none;
-  }
-  nav {
-    position: relative;
-    justify-content: center;
-  }
-  .anchor {
-    padding-top: 20px;
-  }
-  #three {
-    padding-top: 20px;
-  }
-  /* Intro Container */
-  .introContainer {
-    margin-bottom: 100px;
-    height: 90vh;
-  }
-  .underIntro {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .introContainer img {
-    width: 15rem;
-    height: 15rem;
-  }
-  .intro {
-    display: flex;
-    flex-direction: column;
-    line-height: 2.5;
-  }
-  .intro h2 {
-    font-size: medium;
-  }
-
-  /* SKILLS */
-
-  .skillsContainer {
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-  .techSkills {
-    flex-direction: column;
-    justify-content: center;
-    max-width: 100%;
-    padding: 20px;
-  }
-  .techSkills h1 {
-    letter-spacing: 1px;
-    font-size: x-large;
-  }
-  .familiarSkills {
-    flex-direction: column-reverse;
-    justify-content: start;
-    max-width: 100%;
-    padding: 30px;
-  }
-  .familiarSkills h1 {
-    letter-spacing: 1px;
-    font-size: x-large;
-    padding: 30px 10px 30px 50px;
-  }
-  .skills-1 {
-    flex-direction: row;
-    padding: 20px;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .skills-1 h3 {
-    font-size: large;
-    padding: 20px;
-  }
-
-  /* About */
-  .aboutContainer {
-    height: 100%;
-  }
-  .aboutContainer h1 {
-    font-size: x-large;
-    padding: 20px;
-    max-width: 80%;
-  }
-  .aboutItems {
-    flex-direction: column;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 20px;
-    max-width: 90%;
-  }
-  .aboutItems h3 {
-    padding: 10px;
-    font-size: medium;
-    margin-bottom: 15px;
-  }
-  .aboutItems h5 {
-    font-size: small;
-    padding: 10px;
-  }
-
-  /* Project Images */
-  .projectsContainer {
-    max-width: 90%;
-    flex-direction: row;
-    padding: 10px;
-    margin: 100px 10px;
-  }
-  .projectsContainer h1 {
-    font-size: 2rem;
-    padding: 10px;
-    font-weight: 400;
-    max-width: 10%;
-  }
-  .allProjects {
-    padding: 30px 30px 30px 10px;
-    max-width: 95%;
-  }
-  .projectImgs {
-    padding: 15px;
-  }
-  .projectImg {
-    width: 14rem;
-    height: 14rem;
-  }
-
-  /* FOOTER */
-
-  .footerContainer h5 {
-    font-size: large;
-  }
-  .footerIcons {
-    max-width: 50%;
-  }
-
-  .icon {
-    width: 1.7rem;
-    height: 1.7rem;
-  }
-}
-
-/* ----------- iPhone X ----------- */
-
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-  /* Nav */
-  .logo {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px;
-  }
-  .nav-links {
-    display: none;
-  }
-  .navContainer ul li {
-    display: none;
-  }
-  nav {
-    position: relative;
-    justify-content: center;
-  }
-  .anchor {
-    padding-top: 0px;
-  }
-  #three {
-    padding-top: 0px;
-  }
-
-  /* Intro Container */
-  .introContainer {
-    margin-bottom: 100px;
-    height: 90vh;
-  }
-  .underIntro {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .introContainer img {
-    width: 15rem;
-    height: 15rem;
-  }
-  .intro {
-    display: flex;
-    flex-direction: column;
-    line-height: 2.5;
-  }
-  .intro h2 {
-    font-size: medium;
-  }
-
-  /* SKILLS */
-
-  .skillsContainer {
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-  .techSkills {
-    flex-direction: column;
-    justify-content: center;
-    max-width: 100%;
-    padding: 20px;
-  }
-  .techSkills h1 {
-    letter-spacing: 1px;
-    font-size: x-large;
-  }
-  .familiarSkills {
-    flex-direction: column-reverse;
-    justify-content: center;
-    max-width: 100%;
-    padding: 30px;
-  }
-  .familiarSkills h1 {
-    letter-spacing: 1px;
-    font-size: x-large;
-    padding: 30px 10px 30px 50px;
-  }
-  .skills-1 {
-    flex-direction: row;
-    padding: 0px;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .skills-1 h3 {
-    font-size: large;
-    padding: 20px;
-  }
-
-  /* About */
-  .aboutContainer {
-    height: 100%;
-  }
-  .aboutContainer h1 {
-    font-size: x-large;
-    padding: 20px;
-    max-width: 80%;
-  }
-  .aboutItems {
-    flex-direction: column;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 20px;
-    max-width: 90%;
-  }
-  .aboutItems h3 {
-    padding: 10px;
-    font-size: medium;
-    margin-bottom: 15px;
-  }
-  .aboutItems h5 {
-    font-size: small;
-    padding: 10px;
-  }
-
-  /* Project Images */
-  .projectsContainer {
-    max-width: 90%;
-    flex-direction: row;
-    padding: 10px;
-    margin: 100px 10px;
-  }
-  .projectsContainer h1 {
-    font-size: 2rem;
-    padding: 10px;
-    font-weight: 400;
-    max-width: 10%;
-  }
-  .allProjects {
-    padding: 30px 30px 30px 10px;
-    max-width: 95%;
-  }
-  .projectImgs {
-    padding: 15px;
-  }
-  .projectImg {
-    width: 14rem;
-    height: 14rem;
-  }
-
-  /* FOOTER */
-
-  .footerContainer h5 {
-    font-size: large;
-  }
-  .footerIcons {
-    max-width: 50%;
-  }
-
-  .icon {
-    width: 1.7rem;
-    height: 1.7rem;
-  }
-}
-
-/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
-
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* Nav */
-  .logo {
-    margin-left: auto;
-    margin-right: auto;
     padding: 0px;
   }
   .nav-links {
@@ -946,48 +369,87 @@ a.active-link {
   #zero {
     padding-top: 50px;
     padding-bottom: 50px;
-}
+  }
   .anchor {
     padding-top: 0px;
   }
   .anchor2 {
     padding-top: 50px;
     padding-bottom: 50px;
-}
+  }
   #three {
     padding-top: 0px;
   }
-
-  /* Intro Container */
-  .introContainer {
-    margin-bottom: 100px;
-    height: 70vh;
-  }
-  .underIntro {
-    flex-direction: row;
-    justify-content: space-around;
-  }
+  /* introduction section */
   .introContainer img {
-    width: 25rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
     height: 25rem;
+    width: 25rem;
   }
   .intro {
-    display: flex;
-    flex-direction: column;
-    line-height: 2.5;
+    height: 25rem;
   }
   .intro h2 {
     font-size: large;
   }
 
-  /* SKILLS */
+  /* skills section */
+  .techSkills h1 {
+    font-size: x-large;
+  }
+  .familiarSkills h1 {
+    font-size: x-large;
+  }
+  .skills-1 h3 {
+    font-size: x-large;
+  }
+
+  /* projects section  */
+
+  .projectsContainer h1 {
+    padding: 17px;
+    max-width: 20%;
+  }
+  .projectImg {
+    width: 25rem;
+    height: 26rem;
+  }
+}
+/* tablets */
+@media screen and (max-width: 816px) {
+  /* introduction section */
+  .introContainer {
+    margin-bottom: 100px;
+    height: 80vh;
+  }
+  .underIntro {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .introContainer img {
+    display: flex;
+    align-self: flex-start;
+    border-radius: 50%;
+    padding: 0px;
+    width: 25em;
+    height: 25rem;
+  }
+  .intro h2 {
+    font-size: larger;
+    padding: 0.55em;
+  }
+
+  /* skills section */
 
   .skillsContainer {
     margin-top: 100px;
     margin-bottom: 100px;
   }
   .techSkills {
-    flex-direction: row;
     justify-content: center;
     max-width: 80%;
     padding: 10px;
@@ -997,7 +459,6 @@ a.active-link {
     font-size: x-large;
   }
   .familiarSkills {
-    flex-direction: row;
     justify-content: center;
     max-width: 80%;
     padding: 10px 20px 10px 10px;
@@ -1008,7 +469,6 @@ a.active-link {
     padding: 30px 10px 30px 50px;
   }
   .skills-1 {
-    flex-direction: column;
     padding: 10px;
     justify-content: center;
     margin-left: auto;
@@ -1016,16 +476,14 @@ a.active-link {
   }
   .skills-1 h3 {
     font-size: large;
-    padding: 10px;
   }
 
-  /* About */
+  /* about section */
   .aboutContainer {
     height: 100%;
   }
   .aboutContainer h1 {
     font-size: x-large;
-    padding: 20px;
     max-width: 80%;
   }
   .aboutItems {
@@ -1045,18 +503,12 @@ a.active-link {
     padding: 10px;
   }
 
-  /* Project Images */
-  .projectsContainer {
-    max-width: 90%;
-    flex-direction: row;
-    padding: 10px;
-    margin: 100px 10px;
-  }
+  /* projects section */
   .projectsContainer h1 {
     font-size: 3rem;
-    padding: 10px;
+    padding: 17px;
     font-weight: 400;
-    max-width: 15%;
+    max-width: 14%;
   }
   .allProjects {
     padding: 30px 30px 30px 10px;
@@ -1071,145 +523,99 @@ a.active-link {
   }
 }
 
-/* ----------- Galaxy S6 ----------- */
-
-/* Portrait and Landscape */
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) {
-  /* Nav */
-  .logo {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px;
-  }
-  .nav-links {
-    display: none;
-  }
-  .navContainer ul li {
-    display: none;
-  }
-  nav {
-    position: relative;
-    justify-content: center;
-  }
+/* phone screens */
+@media screen and (max-width: 690px) {
+  /* NavBar */
   .anchor {
-    padding-top: 0px;
+    padding-top: 50px;
   }
   #three {
-    padding-top: 0px;
+    padding-top: 50px;
   }
   /* Intro Container */
   .introContainer {
-    margin-bottom: 100px;
-    height: 90vh;
-  }
-  .underIntro {
-    flex-direction: column;
-    justify-content: center;
+    margin-top: 30px;
+    padding: 1rem;
+    padding-bottom: 150px;
+    height: 100vh;
+    background-color: #222823;
   }
   .introContainer img {
-    width: 15rem;
-    height: 15rem;
+    width: 22rem;
+    height: 22rem;
+    justify-content: center;
+    align-content: center;
   }
   .intro {
-    display: flex;
-    flex-direction: column;
-    line-height: 2.5;
+    width: 100%;
   }
   .intro h2 {
-    font-size: medium;
+    font-size: x-large;
   }
 
-  /* SKILLS */
+  /* skills section */
 
   .skillsContainer {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
   }
   .techSkills {
     flex-direction: column;
-    justify-content: center;
     max-width: 100%;
     padding: 20px;
   }
-  .techSkills h1 {
-    letter-spacing: 1px;
-    font-size: x-large;
-  }
   .familiarSkills {
     flex-direction: column-reverse;
-    justify-content: center;
     max-width: 100%;
     padding: 30px;
-  }
-  .familiarSkills h1 {
-    letter-spacing: 1px;
-    font-size: x-large;
-    padding: 30px 10px 30px 50px;
   }
   .skills-1 {
     flex-direction: row;
     padding: 20px;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
   }
   .skills-1 h3 {
-    font-size: large;
     padding: 20px;
   }
 
-  /* About */
+  /* about section */
   .aboutContainer {
-    height: 100%;
-  }
-  .aboutContainer h1 {
-    font-size: x-large;
-    padding: 20px;
-    max-width: 80%;
+    padding-top: 30px;
+    margin-bottom: 50px;
   }
   .aboutItems {
     flex-direction: column;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 20px;
-    max-width: 90%;
   }
   .aboutItems h3 {
     padding: 10px;
-    font-size: medium;
-    margin-bottom: 15px;
-  }
-  .aboutItems h5 {
-    font-size: small;
-    padding: 10px;
   }
 
-  /* Project Images */
+  /* projects section*/
   .projectsContainer {
-    max-width: 90%;
-    flex-direction: row;
+    width: 100%;
     padding: 10px;
-    margin: 100px 10px;
+    margin: 50px 10px;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-content: center;
   }
   .projectsContainer h1 {
-    font-size: 2rem;
-    padding: 10px;
-    font-weight: 400;
-    max-width: 10%;
+    font-size: 3rem;
+    padding: 1em;
+    font-weight: 800;
+    max-width: 89%;
+    writing-mode: horizontal-tb;
+    letter-spacing: 6px;
   }
   .allProjects {
-    padding: 30px 30px 30px 10px;
-    max-width: 95%;
+    border-left: solid black 2px;
+    padding: 40px 25px 30px 25px;
   }
-  .projectImgs {
-    padding: 15px;
-  }
-  .projectImg {
-    width: 14rem;
-    height: 14rem;
+  .img-1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
   }
 
-  /* FOOTER */
+  /* footer section */
 
   .footerContainer h5 {
     font-size: large;
@@ -1217,8 +623,21 @@ a.active-link {
   .footerIcons {
     max-width: 50%;
   }
+
   .icon {
     width: 1.7rem;
     height: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 570) {
+  /* intro section */
+
+  .introContainer img {
+    width: 15rem;
+    height: 15rem;
+  }
+  .intro {
+    background-color: none;
   }
 }
